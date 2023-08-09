@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        form{
+            max-width: 50%;
+            margin: 5% auto;
+            line-height: 35px;
+        }
+        form label, form select{
+            width:100%;
+            font-size: 1.2rem;
+        }
+        form select{
+            font-size: 2rem;
+            padding: 1% 2%;
+            outline: none;
+        }
+        form select:focus{
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <label>Zip Code</label>
+    <select id="CCode"></select>
+<label>Country</label>
+<select id="country"></select>
+<label class="dynamic_state" id="dynamic_state">State</label>
+<label>State</label>
+<select id="state"></select>
+    </form>   
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="countries.js" ></script>
+</body>
+</html>
